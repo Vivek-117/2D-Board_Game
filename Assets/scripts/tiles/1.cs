@@ -1,22 +1,80 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PurrNet;
 using UnityEngine.UI;
 
-public class Tiel1 : MonoBehaviour
+public class Tiel1 : NetworkBehaviour
 {
     public Tiel t1;
     public Tiel t2;
     public EndTurn turn;
     public int pos1=1;
     public int pos2=1;
-    public int movecount;
+    public int movecount=1;
     public GameObject[] loc;
+    public Button[] but;
     void Start(){
-        t1.move(loc[0]);
-        t2.move(loc[0]);
-        movecount=1;
     }
+    void Update(){
+
+    }
+    public void mm1(){
+        m1();
+    }
+    public void mm2(){
+        m2();
+    }
+    public void mm3(){
+        m3();
+    }
+    public void mm4(){
+        m4();
+    }
+    public void mm5(){
+        m5();
+    }
+    public void mm6(){
+        m6();
+    }
+    public void mm7(){
+        m7();
+    }
+    public void mm8(){
+        m8();
+    }
+    public void mm9(){
+        m9();
+    }
+    public void mm10(){
+        m10();
+    }
+    public void mm11(){
+        m11();
+    }
+    public void mm12(){
+        m12();
+    }
+    public void mm13(){
+        m13();
+    }
+    public void mm14(){
+        m14();
+    }
+    public void mm15(){
+        m15();
+    }
+    public void mm16(){
+        m16();
+    }
+    public void mm17(){
+        m17();
+    }
+    public void mm18(){
+        m18();
+    }
+
+    [ObserversRpc]
     public void m1(){
         if(movecount==1){
         if(turn.turn==1){
@@ -32,6 +90,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m2(){
         if(movecount==1){
         if(turn.turn==1){
@@ -47,6 +106,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m3(){
         if(movecount==1){
         if(turn.turn==1){
@@ -62,6 +122,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m4(){
         if(movecount==1){
         if(turn.turn==1){
@@ -77,6 +138,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m5(){
         if(movecount==1){
         if(turn.turn==1){
@@ -92,6 +154,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m6(){
         if(movecount==1){
         if(turn.turn==1){
@@ -107,6 +170,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m7(){
         if(movecount==1){
         if(turn.turn==1){
@@ -122,6 +186,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m8(){
         if(movecount==1){
         if(turn.turn==1){
@@ -137,6 +202,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m9(){
         if(movecount==1){
         if(turn.turn==1){
@@ -152,6 +218,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m10(){
         if(movecount==1){
         if(turn.turn==1){
@@ -167,6 +234,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m11(){
         if(movecount==1){
         if(turn.turn==1){
@@ -182,6 +250,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m12(){
         if(movecount==1){
         if(turn.turn==1){
@@ -197,6 +266,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m13(){
         if(movecount==1){
         if(turn.turn==1){
@@ -212,6 +282,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m14(){
         if(movecount==1){
         if(turn.turn==1){
@@ -227,6 +298,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m15(){
         if(movecount==1){
         if(turn.turn==1){
@@ -242,6 +314,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m16(){
         if(movecount==1){
         if(turn.turn==1){
@@ -257,6 +330,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m17(){
         if(movecount==1){
         if(turn.turn==1){
@@ -272,6 +346,7 @@ public class Tiel1 : MonoBehaviour
         }
         }
     }
+    [ObserversRpc]
     public void m18(){
         if(movecount==1){
         if(turn.turn==1){
@@ -280,7 +355,7 @@ public class Tiel1 : MonoBehaviour
         pos1=18;
         movecount=0;
         }}
-        else if(pos2==14||pos2==18){
+        else if(pos2==14||pos2==17){
         t2.move(loc[17]);
         pos2=18;
         movecount=0;
